@@ -10,10 +10,24 @@
 .header__links-list {
     display: flex;
     justify-content: flex-start;
+    list-style:circle;
 }
 
-.header__links-list-item{
+.header__content {
+    display: flex; /* Включаем Flexbox */
+    justify-content: space-between; /* Равномерное распределение элементов */
+    align-items: center; /* Выравнивание по вертикали */
+    padding-top: 92px;
+    padding-bottom: 96px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
 
+.header__menu-item_active .header__links-list-item {
+    text-decoration: none;
+}
+
+.header__links-list-item {
 color: #000;
 font-family: Raleway;
 font-size: 18px;
@@ -99,3 +113,16 @@ text-decoration: none;
     display: flex;
     justify-content: flex-end;
 }
+
+.cards-list{ 
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style: none;
+}
+
+.card { 
+    border-radius: 30px;
+    padding: 20px;
+}
+

@@ -11,13 +11,15 @@
   </head>
   <body>
     <header class="header__container">
-      <div> 
-        <ul class="header__links-list">
-          <li class="header__links-list-item">главная</li>
-          <li class="header__links-list-item">посмотреть лоты</li>
-          <li class="header__links-list-item">об аукционе</li>
-        </ul>
-        <div class="header__logo"> 
+      <div class="header__content"> 
+        <nav>
+          <ul class="header__links-list">
+            <li class="header__links-list-item header__menu-item_active"><a href="#">главная</a></li>
+            <li class="header__links-list-item"><a href="#">посмотреть лоты</a></li>
+            <li class="header__links-list-item"><a href="#">об аукционе</a></li>
+          </ul>
+        </nav>
+        <div class="header__logo">
           <img src="./images/logo-black.svg" alt="Логотип"/>
         </div>
         <div class="header__address"> 
@@ -33,15 +35,48 @@
     <div class="cover">
       <h1 class="cover__text">
         <span class="accent-span first">оно</span>
-        <span class="accent-span text-center ">тебе</span>
+        <span class="accent-span text-center">тебе</span>
         <span class="accent-span text-right">надо</span>
       </h1>
       <div class="cover__container"> 
-        <p class="cover__text">Аукцион вещей, в которые никто не верил</p>
+        <p class="cover__description">Аукцион вещей, в которые никто не верил</p>
         <!-- <button class="cover__button">Сделать ставку</button> -->
       </div>
     </div>
-    <h2>ЛОТЫ</h2>
+    <main>
+      <h2>ЛОТЫ</h2>
+      <ul class="cards-list">
+        <li>
+          <article class="card">
+            <div>
+              <img class="card__image" src="./images/card-lot-01.jpg" alt="Фильм режиссёра">
+              <p>Фильм режиссёра, который бросил киношколу</p>
+              <div>
+                <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <div class="footer__address">
+        <div class="footer__info">
+          <a href="tel:+9 999 555 5555">+9 999 555 5555</a>
+          <br>
+          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <address>наб. Принсенграхт 263-265, Амстердам</address>
+        </div>
+      </div>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item"><a href="#">главная</a></li>
+          <li class="footer__menu-list-item"><a href="#">посмотреть лоты</a></li>
+          <li class="footer__menu-list-item"><a href="#">об аукционе</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
+
 
