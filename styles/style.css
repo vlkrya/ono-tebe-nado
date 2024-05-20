@@ -1,1 +1,101 @@
 /* место для вашего кода */
+
+.header__container {
+
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+}
+
+.header__links-list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header__links-list-item{
+
+color: #000;
+font-family: Raleway;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 27px 44px 32px 0px;
+text-decoration: none;
+}
+
+.header__logo {
+    display: block;
+    width: 148px;
+    height: 105px;
+    flex-shrink: 0;
+    justify-content: center;
+
+}
+
+.header__info {
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px; /* 135% */
+}
+
+.accent-span {
+    display: block;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%; /* 115px */
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    
+}
+
+.first {
+    padding-top: 165px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.cover {
+    background-image: url(../images/cover.jpg);
+    width: 1100px;
+    height: 757px;
+    flex-shrink: 0;
+
+
+}
+
+.cover__text {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 24.2px;
+    text-transform: uppercase;
+}
+
+.cover__button {
+    width: 193px;
+    height: 28px;
+    color: #FFF;
+    font-family: Raleway;
+    
+}
+
+.cover__container {
+    display: flex;
+    justify-content: flex-end;
+}
