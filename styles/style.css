@@ -68,8 +68,10 @@
 }
 
 .overlay {
-    height: inherit;
     background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    opacity: 0.6;
+    inset: 0;
 }
 
 .overlay-lots {
@@ -80,6 +82,11 @@
 .cover {
     background: url(../images/cover.jpg) center/cover;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 165px 50px 50px 50px;
+    position: relative;
+    background-repeat: no-repeat;
 }
 
 .card__link {
@@ -94,10 +101,33 @@
     text-transform: uppercase;
     font-size: 100px;
     letter-spacing: 0.3em;
-    gap: 10px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
+    z-index: 1;
+    line-height: 100%;
+    margin-bottom: 135px;
 
+}
+
+.aligned-text {
+    display: block;
+}
+
+.letter-spacing {
+    letter-spacing: 60px;
+}
+
+.aligned-text-large {
+    line-height: 115%;
+}
+
+.aligned-text-center {
+    text-align: center;
+}
+
+.aligned-text-right {
+    text-align: right;
 }
 
 .cover__title__container {
@@ -128,30 +158,33 @@
 }
 
 .cover__text { 
-    color: #FFF;
     font-size: 22px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 28px;
-    text-transform: uppercase;
-    padding-bottom: 48px;
     word-spacing: 17.5px;
-    padding-left: 50px;
-    
 }
 
 .cover__button {
-    color: #FFF;
-    text-align: center;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    border: 1px solid #FFF;
-    background-color: transparent;
+    color: inherit;
     padding: 12px 32px;
-    margin-bottom: 51px;
+    background: transparent;
+    outline: none;
+    border: 1px solid;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+
+
+}
+
+.cover__container-text {
+    z-index: 1;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 78px;
 }
 
 .cover__container {
